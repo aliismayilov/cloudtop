@@ -4,5 +4,6 @@ class UsersController < ApplicationController
   end
 
   def show
+    @tracks = Track.fetch(params[:username])
   end
 end
